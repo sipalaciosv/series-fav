@@ -1,0 +1,48 @@
+.hero {
+   position: relative;
+  height: 100vh; 
+  min-height: 600px; 
+  color: $text-color;
+  font-family: $font-main;
+  margin-bottom: 0; 
+
+  &__background {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BZWFmYWIwN2MtYTcyMy00ZDY2LWJjNTktNzY5N2U0MWI0ZWJiXkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg'); // imagen online o local
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+  }
+
+  &__overlay {
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.2));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-md;
+  }
+
+  &__button {
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+  }
+}

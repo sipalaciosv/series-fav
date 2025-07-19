@@ -1,0 +1,25 @@
+.main-navbar {
+  font-family: $font-main;
+  padding: $spacing-md 0;
+
+  .navbar__brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $primary-color;
+
+    &:hover {
+      color: lighten($primary-color, 10%);
+    }
+  }
+
+  .navbar__link {
+    color: $text-color;
+    margin-left: $spacing-md;
+    transition: color 0.3s;
+
+    &:hover,
+    &.active {
+      color: $primary-color;
+    }
+  }
+}

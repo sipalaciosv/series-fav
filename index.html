@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Series Favoritas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/main.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark main-navbar sticky-top">
+    <div class="container">
+      <a class="navbar__brand navbar-brand" href="#">Mis Series Favoritas</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar__content" id="navbarContent">
+        <ul class="navbar-nav ms-auto navbar__links">
+          <li class="nav-item">
+            <a class="nav-link active navbar__link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar__link" href="#mis-series">Favoritas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar__link" href="#recomienda">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <section class="hero ">
+    <div class="hero__background">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+        <h1 class="hero__title">The Black List</h1>
+        <p class="hero__description">
+           La vida de una agente del FBI, Elizabeth Keen, se torna al revés cuando un criminal que ha evadido ser capturado por décadas, Raymond Reddington, se entrega e insiste en hablar únicamente con ella.
+        </p>
+        <a href="https://www.netflix.com/es/title/70281312" class="btn btn-danger hero__button">Ver ahora</a>
+        </div>
+    </div>
+    </section>
+
+
+  <main class="container mt-5">
+    <section class="series container mb-5 " id="mis-series" >
+    <h2 class="series__title mb-4 ">Series Favoritas</h2>
+
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+        <div class="col">
+        <div
+            class="series-card"
+            data-bs-toggle="modal"
+            data-bs-target="#seriesModal"
+            data-title="The Blacklist"
+            data-img="https://m.media-amazon.com/images/M/MV5BNDk4MGU4NTItNDMyMC00NjQ0LWFlMWUtYzJlMTM1M2M2ZTU3XkEyXkFqcGc@._V1_FMjpg_UX675_.jpg"
+            data-synopsis="Un criminal altamente buscado se entrega voluntariamente al FBI y ofrece ayudar a atrapar a peligrosos delincuentes bajo su propia lista negra."
+            data-genre="Crimen, Drama, Misterio"
+            data-seasons="10"
+        >
+            <img src="https://m.media-amazon.com/images/M/MV5BNDk4MGU4NTItNDMyMC00NjQ0LWFlMWUtYzJlMTM1M2M2ZTU3XkEyXkFqcGc@._V1_FMjpg_UX675_.jpg" alt="The Blacklist" class="series-card__image">
+            <h3 class="series-card__name">The Blacklist</h3>
+        </div>
+        </div>
+        <div class="col">
+        <div
+            class="series-card"
+            data-bs-toggle="modal"
+            data-bs-target="#seriesModal"
+            data-title="Vikingos"
+            data-img="https://m.media-amazon.com/images/M/MV5BOGI1M2NjNDQtZTU0YS00MTkyLWFkODUtNjcxOWI2MDUyYTY3XkEyXkFqcGc@._V1_FMjpg_UX2160_.jpg"
+            data-synopsis="Sigue las aventuras de Ragnar Lothbrok, el más grande héroe de su era, mientras lidera a los vikingos en legendarias expediciones."
+            data-genre="Acción, Aventura, Drama"
+            data-seasons="6"
+        >
+            <img src="https://m.media-amazon.com/images/M/MV5BMTkyNTc3MDM4OF5BMl5BanBnXkFtZTcwODQ3NjU1OQ@@._V1_FMjpg_UX500_.jpg" alt="Vikingos" class="series-card__image">
+            <h3 class="series-card__name">Vikingos</h3>
+        </div>
+        </div>
+        <div class="col">
+        <div
+            class="series-card"
+            data-bs-toggle="modal"
+            data-bs-target="#seriesModal"
+            data-title="One Piece"
+            data-img="https://m.media-amazon.com/images/M/MV5BMGY2ZDI2NDMtYzYzMi00NWRhLTk0MWYtMDUwMzJmMGE3ZmJmXkEyXkFqcGc@._V1_FMjpg_UX1920_.jpg"
+            data-synopsis="Monkey D. Luffy y su tripulación de piratas exploran los mares en busca del legendario tesoro conocido como One Piece."
+            data-genre="Aventura, Fantasía, Anime"
+            data-seasons="20+"
+        >
+            <img src="https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_FMjpg_UX1024_.jpg" alt="One Piece" class="series-card__image">
+            <h3 class="series-card__name">One Piece</h3>
+        </div>
+        </div>
+        <div class="col">
+        <div
+            class="series-card"
+            data-bs-toggle="modal"
+            data-bs-target="#seriesModal"
+            data-title="Peaky Blinders"
+            data-img="https://m.media-amazon.com/images/M/MV5BMTQ0NDM3MjczMV5BMl5BanBnXkFtZTgwMTIwODM4MjE@._V1_FMjpg_UX2048_.jpg"
+            data-synopsis="La historia de una ambiciosa banda criminal familiar ambientada en la Birmingham de la posguerra."
+            data-genre="Crimen, Drama"
+            data-seasons="6"
+        >
+            <img src="https://m.media-amazon.com/images/M/MV5BOGM0NGY3ZmItOGE2ZC00OWIxLTk0N2EtZWY4Yzg3ZDlhNGI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Peaky Blinders" class="series-card__image">
+            <h3 class="series-card__name">Peaky Blinders</h3>
+        </div>
+        </div>
+        <div class="col">
+        <div
+            class="series-card"
+            data-bs-toggle="modal"
+            data-bs-target="#seriesModal"
+            data-title="Los Soprano"
+            data-img="https://m.media-amazon.com/images/M/MV5BMjI2OTY1Njg5Ml5BMl5BanBnXkFtZTgwNjY0NDIzMjE@._V1_FMjpg_UX500_.jpg"
+            data-synopsis="Tony Soprano, un capo mafioso de Nueva Jersey, busca balancear su vida criminal con los problemas familiares."
+            data-genre="Crimen, Drama"
+            data-seasons="6"
+        >
+            <img src="https://m.media-amazon.com/images/M/MV5BZjY0MGU3ZDQtMDg1Yi00OTA1LWJjNWQtZWQwNDg2MjA2MmY1XkEyXkFqcGc@._V1_FMjpg_UX838_.jpg" alt="Los Soprano" class="series-card__image">
+            <h3 class="series-card__name">Los Soprano</h3>
+        </div>
+        </div>
+        <div class="col">
+        <div
+            class="series-card"
+            data-bs-toggle="modal"
+            data-bs-target="#seriesModal"
+            data-title="S.W.A.T."
+            data-img="https://m.media-amazon.com/images/M/MV5BZGMyNmQ0ZGEtZTQ3Yy00OWQwLWFlODYtMDhkNTE1ODk4YTU1XkEyXkFqcGc@._V1_FMjpg_UX500_.jpg"
+            data-synopsis="Un sargento del S.W.A.T. de Los Ángeles debe equilibrar la lealtad a la calle y a sus compañeros mientras lidera un equipo de élite."
+            data-genre="Acción, Crimen, Drama"
+            data-seasons="7"
+        >
+            <img src="https://m.media-amazon.com/images/M/MV5BNmNjZDEyNzAtYTI3NS00YTAwLWJiZjEtNzNmOGFkNTQ2MWIzXkEyXkFqcGc@._V1_FMjpg_UX960_.jpg" alt="S.W.A.T." class="series-card__image">
+            <h3 class="series-card__name">S.W.A.T.</h3>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="recommend container py-5" id="recomienda">
+    <h2 class="recommend__title mb-4 text-center text-white">¿Tienes una serie para recomendar?</h2>
+    <form class="recommend__form mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+        <label for="serieNombre" class="form-label text-white">Nombre de la serie</label>
+        <input type="text" class="form-control" id="serieNombre" placeholder="Ej: Better Call Saul" required>
+        </div>
+        <div class="mb-3">
+        <label for="serieGenero" class="form-label text-white">Género</label>
+        <input type="text" class="form-control" id="serieGenero" placeholder="Ej: Drama, Suspenso" required>
+        </div>
+        <div class="mb-3">
+        <label for="serieComentario" class="form-label text-white">¿Por qué la recomiendas?</label>
+        <textarea class="form-control" id="serieComentario" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger w-100 recommend__button">Enviar recomendación</button>
+    </form>
+    </section>
+
+  </main>
+  <footer class="footer py-4 bg-dark text-center text-white">
+  <div class="container">
+    <small>© 2024 Mis Series Favoritas. Todos los derechos reservados.</small>
+  </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal fade series-modal" id="seriesModal" tabindex="-1" aria-labelledby="seriesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+            <h5 class="modal-title series-modal__title" id="seriesModalLabel">Título de la Serie</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            <img src="" alt="Portada serie" class="series-modal__img mb-3" >
+            <p class="series-modal__synopsis">Aquí irá la sinopsis de la serie.</p>
+            <p class="series-modal__extra">
+            <strong>Género:</strong> <span class="series-modal__genre">Drama</span><br>
+            <strong>Temporadas:</strong> <span class="series-modal__seasons">5</span>
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+    var seriesModal = document.getElementById('seriesModal');
+    seriesModal.addEventListener('show.bs.modal', function (event) {
+        var card = event.relatedTarget;
+        var title = card.getAttribute('data-title');
+        var img = card.getAttribute('data-img');
+        var synopsis = card.getAttribute('data-synopsis');
+        var genre = card.getAttribute('data-genre');
+        var seasons = card.getAttribute('data-seasons');
+
+        seriesModal.querySelector('.series-modal__title').textContent = title;
+        seriesModal.querySelector('.series-modal__img').src = img;
+        seriesModal.querySelector('.series-modal__img').alt = title;
+        seriesModal.querySelector('.series-modal__synopsis').textContent = synopsis;
+        seriesModal.querySelector('.series-modal__genre').textContent = genre;
+        seriesModal.querySelector('.series-modal__seasons').textContent = seasons;
+    });
+    </script>
+    <script>
+  document.querySelector('.recommend__form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if(!document.querySelector('.recommend__msg')){
+      const msg = document.createElement('div');
+      msg.className = 'alert alert-success recommend__msg mt-3 text-center';
+      msg.textContent = '¡Gracias por tu recomendación!';
+      this.appendChild(msg);
+      this.reset();
+      setTimeout(()=>msg.remove(), 3000); 
+    }
+  });
+</script>
+</body>
+</html>
